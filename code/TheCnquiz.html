@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background:url("./complete.jpg");
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+        input:hover(){
+            font-size: 2em;
+        }
+        #div1{
+            display: flex;
+            flex-direction: column;
+            /* border: 3px solid green; */
+            border-radius: 13px;
+            align-items: center;
+            justify-content: center;
+            color:black;
+            font-size: 1em;
+            background: url("./book.jpg") no-repeat center center/cover;
+        }
+        .div2{
+            /* display: inline-block; */
+            display: none;
+            border: 3px solid green;
+            border-radius: 13px;
+            align-items: center;
+            justify-content: center;
+            color:black;
+            margin:10px 85px;
+            background:wheat;
+            padding:15px;
+        }
+        form{
+            background: url("./question.jpg") no-repeat center center/cover;
+
+        }
+        button{
+            width:15%;
+            margin:10px auto;
+            padding:5px;
+            border:2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            color:red;
+            background: antiquewhite;
+        }
+        button:hover{
+            color: antiquewhite;
+            background:red;
+        }
+        #btn5{
+            width:20%;
+        }
+        .questions{
+            margin:10px 0px;
+            
+        }       
+        .query{
+            display:block;
+            position:fixed;
+            color:whitesmoke;
+            width:150px;
+            height:150px;
+            border:2px solid black;
+            border-radius: 10px;
+            top:100px;
+            right:50px;
+        } 
+        #timer{
+            /* display: inline-block;    */
+            display: none;
+            position:absolute;
+            width:100px;
+            height:100px;
+            border:5px solid black;
+            background-color: yellowgreen;
+            border-radius: 100%;
+            top:20px;
+            left:20px;
+            text-align: center;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>WELCOME</h1>
+    </div>
+    <div id="timer">
+        TIMER
+        <h2 id="some_div" >I AM TIMER</h2>
+    </div>
+    <div>
+        <button id="start_btn" onclick="fun2()" style="display:block;border:2px solid black; width:200px;height:70px; align:center; margin:10px auto; text-shadow: 80px green;font-size: 1.5em;">Start The Test</button>
+    </div>
+    <!-- <div class="query">
+        <h3 style="text-align:center">Any Query</h3>
+        <input type="text" style="display:block;width:100px;padding:20px;margin:auto">
+        <button style="position:absolute;top: 125px;right:45px;width:60px" >Submit</button>
+    </div> -->
+    <form action="submitted.html">
+
+        <div class="questions">
+            <div class="div2">
+                <h3>Q1. The IETF standards documents are called ________</h3>
+                <input id="a1" name="q1" type="radio" value="RFC">RFC</input>
+                <br>
+                <input id="b1" name="q1" type="radio" value="RCF">RCF</input>
+                <br>
+                <input id="c1" name="q1" type="radio" value="ID">ID</input>
+                <br>
+                <input id="d1" name="q1" type="radio" value="DFC">DFC</input>
+                <br>
+                <button id="btn4" onclick="fun1()">Mark</button>
+                <button id="btn5">Mark Invalid</button>
+                <br>        
+            </div>
+            <div class="div2">
+                <h3>Q1. The IETF standards documents are called ________</h3>
+                <input id="a1" name="q1" type="radio" value="RFC">RFC</input>
+                <br>
+                <input id="b1" name="q1" type="radio" value="RCF">RCF</input>
+                <br>
+                <input id="c1" name="q1" type="radio" value="ID">ID</input>
+                <br>
+                <input id="d1" name="q1" type="radio" value="DFC">DFC</input>
+                <br>
+                <button id="btn4" onclick="fun1()">Mark</button>
+                <button id="btn5">Mark Invalid</button>
+    
+                <br>        
+            </div>
+        </div>
+        <div class="questions">
+            <div class="div2">
+                <h3>Q1. The IETF standards documents are called ________</h3>
+                <input id="a1" name="q1" type="radio" value="RFC">RFC</input>
+                <br>
+                <input id="b1" name="q1" type="radio" value="RCF">RCF</input>
+                <br>
+                <input id="c1" name="q1" type="radio" value="ID">ID</input>
+                <br>
+                <input id="d1" name="q1" type="radio" value="DFC">DFC</input>
+                <br>
+                <button id="btn4" onclick="fun1()">Mark</button>
+                <button id="btn5">Mark Invalid</button>
+    
+                <br>        
+            </div>
+            <div class="div2">
+                <h3>Q1. The IETF standards documents are called ________</h3>
+                <input id="a1" name="q1" type="radio" value="RFC">RFC</input>
+                <br>
+                <input id="b1" name="q1" type="radio" value="RCF">RCF</input>
+                <br>
+                <input id="c1" name="q1" type="radio" value="ID">ID</input>
+                <br>
+                <input id="d1" name="q1" type="radio" value="DFC">DFC</input>
+                <br>
+                <button id="btn4" onclick="fun1()">Mark</button>
+                <button id="btn5">Mark Invalid</button>
+    
+                <br>        
+            </div>        
+        </div>
+        <div class="questions">
+            <div class="div2">
+                <h3>Q1. The IETF standards documents are called ________</h3>
+                <input id="a1" name="q1" type="radio" value="RFC">RFC</input>
+                <br>
+                <input id="b1" name="q1" type="radio" value="RCF">RCF</input>
+                <br>
+                <input id="c1" name="q1" type="radio" value="ID">ID</input>
+                <br>
+                <input id="d1" name="q1" type="radio" value="DFC">DFC</input>
+                <br>
+                <button id="btn4" onclick="fun1()">Mark</button>
+                <button id="btn5">Mark Invalid</button>
+    
+                <br>        
+            </div>
+            <div class="div2">
+                <h3>Q1. The IETF standards documents are called ________</h3>
+                <input id="a1" name="q1" type="radio" value="RFC">RFC</input>
+                <br>
+                <input id="b1" name="q1" type="radio" value="RCF">RCF</input>
+                <br>
+                <input id="c1" name="q1" type="radio" value="ID">ID</input>
+                <br>
+                <input id="d1" name="q1" type="radio" value="DFC">DFC</input>
+                <br>
+                <button id="btn4" onclick="fun1()">Mark</button>
+                <button id="btn5">Mark Invalid</button>
+    
+                <br>        
+            </div>
+            <div>
+                <button id="btn6" type="submit" style="display: none; margin:auto;width:90px;height:30px;border:2ps solid black;border-radius: 10px;" onclick="window.confirm('Are you sure?')">Submit Test</button>
+            </div>
+    </form>
+    </div>
+    <script>
+
+
+        function fun1()
+        {
+            var a1=document.getElementById("a1");
+            var b1=document.getElementById("b1");
+            var c1=document.getElementById("c1");
+            var d1=document.getElementById("d1");
+            if(a1.checked==true)        //when radio button is refernced checked property is used
+            {
+                alert("BUTTON ONE ANS:"+a1.value+"  YOUR ANSWER IS CORRECT");
+                count+=1;
+            }
+            else if(b1.checked==true)
+            {
+                alert("BUTTON TWO ANS:"+b1.value+"  YOUR ANSWER IS WRONG");
+            }
+            else if(c1.checked==true)
+            {
+                alert("BUTTON TWO ANS:"+c1.value+"  YOUR ANSWER IS WRONG");
+            }
+            else if(d1.checked==true)
+            {
+                alert("BUTTON TWO ANS:"+d1.value+" YOUR ANSWER IS WRONG");
+            }
+            else
+            {
+                alert("NO ANSWER SELECTED");
+            }
+            
+        }
+
+
+        function fun2(){
+            var arr=document.getElementsByClassName("div2");
+            for(let i=0;i<arr.length;i++){
+                arr[i].style.display="inline-block";
+            }
+
+            document.getElementById("timer").style.display="inline-block";
+            document.getElementById("start_btn").style.display="none";
+        
+        
+            // var time=arr.length*2000;
+            // var elem=document.getElementById('some_div');
+            // var timerid=setInterval(countdown,1000);
+            // function countdown(){
+            //     if(time==-1){
+            //         clearTimeout(timerid);
+            //         do_something();
+            //     }
+            //      else{
+            //         elem.innerHTML=time + ' seconds remaining';
+            //         time--;
+            //      }
+            //  }
+            // function do_something(){
+            //     alert("Time Is Up...");
+            // }
+        
+        
+        
+        // ------------------------------------------------------
+        document.getElementById("btn6").style.display="block";
+        const Total_mins=arr.length*2;
+        let time=Total_mins*60;
+        const Element=document.getElementById("some_div");
+        var timerId=setInterval(count_down,1000);
+        function count_down(){
+            const minutes=Math.floor(time/60);
+            let sec=time%60;
+            
+            // time=time<0?0:time;
+            sec=sec<10 ? '0'+sec:sec;
+            Element.innerHTML=`${minutes}:${sec}`;
+            time--;
+            if(time<0){
+                clearTimeout(timerId);
+                do_some();
+                window.location.href="submitted.html";  
+            }
+               
+        }
+        function do_some(){
+            alert("Time IS Up .......");
+            for(let i=0;i<arr.length;i++)
+            {
+                arr[i].style.display="none";
+            }
+            //window.location.href="submitted.html";
+        }
+        
+    }
+        
+        var x=localStorage.getItem("NAME");
+        var y=localStorage.getItem("CONTACT");
+        var z=localStorage.getItem("EMAIL");
+
+        var div=document.getElementById("div1");
+        
+        var h4_1=document.createElement("p");
+        var h4_1_text=document.createTextNode("Name: "+x);
+        h4_1.appendChild(h4_1_text);
+        div.appendChild(h4_1);
+
+        var h4_2=document.createElement("p");
+        var h4_2_text=document.createTextNode("Contact: "+y);
+        h4_2.appendChild(h4_2_text);
+        div.appendChild(h4_2);
+
+        var h4_3=document.createElement("p");
+        var h4_3_text=document.createTextNode("Email :"+z);
+        h4_3.appendChild(h4_3_text);
+        div.appendChild(h4_3);
+
+       
+        
+//         var h3 = document.getElementsByTagName("h3");
+// h3[0].innerHTML = "Countdown Timer With JS";
+
+    
+        // document.write(x);
+        // document.write("<br>");
+        // document.write(y);
+        // document.write("<br>");
+        // document.write(z);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: black;;
+            /* background: url("./cn1.jpg") no-repeat center  ; */
+            font-family: 'Baloo Bhaina 2', cursive;
+            background: url("./info.jpg") no-repeat center center/cover;
+        }
+        .container{
+            display:block;
+            width:300px;
+            height:250px;
+            border:2px solid white;
+            border-radius: 17px;
+            margin:70px 750px;
+        }
+        input{
+            border:2px solid green;
+            border-radius: 15px;
+            height:30px;
+            width:250px;
+            margin:auto;
+            text-align:center;
+        }
+        button{
+            width:50%;
+            margin:10px auto;
+            padding:5px;
+            border:2px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            color:red;
+            background: antiquewhite;
+        }
+        button:hover{
+            color: antiquewhite;
+            background:red;
+        }
+        label{
+            color:maroon;
+            margin:auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <form action="TheCnquiz.html" style="display: flex;flex-direction: column;">
+           <label for="">Name:</label>
+           <input id="input1" type="text" required onchange="func()">
+           <label for="">Contact</label>
+           <input id="input2" type="number" required>    
+           <label for="">Email</label>
+           <input id="input3"type="text">
+           <button type="submit" onclick="func1()">Submit</button>
+       </form> 
+    </div>
+    <script>
+        function func(){
+            var x=document.getElementById('input1').style.textTransform="uppercase";
+        }
+        function func1(){
+            var x=document.getElementById('input1').value;
+            var y=document.getElementById('input2').value;
+            var z=document.getElementById('input3').value;
+            confirm("Name: "+x+"\nContact No: "+y+"\nEmail: "+z);
+            localStorage.setItem("NAME",x);
+            localStorage.setItem("CONTACT",y);
+            localStorage.setItem("EMAIL",z);
+
+        }
+    </script>
+</body>
+</html>

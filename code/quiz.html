@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background: black;;
+            font-family: 'Baloo Bhaina 2', cursive;
+            background:url("./image.jpg") no-repeat center center/cover;
+        
+        }
+
+        .container{
+            display:block;
+            border-radius: 10px;
+            height:650px; 
+            width:300px;
+            margin:auto;
+            padding:10px;
+        }
+        #div1{
+            width:95%;
+            color:white;
+            border:3px solid white;
+            border-radius:9px;
+            margin:7px 5px;
+            text-align: center;
+            
+        }
+        .div2{
+            font-size: 1.2em;
+            width:95%;
+            color:black;
+            border:3px solid white;
+            border-radius:10px;
+            margin:7px 5px;
+            text-align: center;
+            padding:8px 0px;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+        }
+        a:hover{
+            font-size: 1.5em;
+        }
+        img{
+            color:white;
+            border:3px solid white;
+            border-radius:9px;
+            margin:7px 5px;
+            text-align: center;
+            width:285px;
+            height:100%;
+        }
+        .login{
+            display: inline-block;
+            position:absolute;
+            width:200px;
+            top:10px;
+            right:20px;
+            border:2px solid white;
+            border-radius:10px;
+            height:200px;
+            color:white;
+            padding:9px;
+        }
+        .contact{
+            display: inline-block;
+            position:absolute;
+            width:200px;
+            top:10px;
+            left:20px;
+            border:2px solid white;
+            border-radius:10px;
+            height:250px;
+            color:white;
+            padding:9px;
+
+        }
+        .contact-us{
+            display: inline-block;
+            position:absolute;
+            width:250px;
+            top:450px;
+            right:20px;
+            border:2px solid black;
+            border-radius:10px;
+            height:150px;
+            color:red;
+            padding:9px;
+    
+        }
+        input{
+            border:2px solid green;
+            border-radius: 15px;
+            height:20px;
+        }
+        button{
+            width:50%;
+            margin:3px auto;
+            padding:3px;
+        }
+        h3{
+            background-color: antiquewhite;
+            color:black;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="home">
+        <div class="contact">
+            <h3 style="text-align:center;border:2px solid white;margin:5px;border-radius:5px;">Contact Info</h3>
+            <label for="">Name:</label>
+            <input type="text">
+            <label for="">Email Id:</label>
+            <input type="text">
+            <label for="">Contact No:</label>
+            <input type="text">    
+        </div>
+        <div class="container">
+            <div id="div1">
+                <h2>Your Quiz App</h2>
+            </div>
+    
+            <div id="img1">
+                <img src="./quiz.png" alt="quiz image">
+            </div>
+    
+            <div class="div2">
+                <a href="cn.html" >Computer Networks</a>
+            </div>
+    
+            <div class="div2">
+                <a href="" >Database Management</a>
+            </div>
+    
+            <div class="div2">
+                <a href="" >Software Engineering</a>
+            </div>
+    
+            <div class="div2">
+                <a href="" >Theory Of Computation</a>
+            </div>
+            <div class="div2">
+                <a href="" >Current Affairs</a>
+            </div>
+        </div>
+
+        <div class="login">
+            <h3 style="text-align:center;border:2px solid white;margin:5px;border-radius:5px;">LOGIN</h3>
+            <form action="" class="form-grp" style="display: flex;flex-direction: column;">
+                <label for=""></label>Username:</label>
+                <input type="text" id="i1" onchange="capital()">
+                <label for="">Password:</label>
+                <input type="password">
+                <button>Login</button>
+            </form>     
+        </div>
+        <div class="contact-us">
+            <h3 style="text-align:center;border:2px solid white;margin:5px;border-radius:5px;">Contact Us</h3>
+            <label for="">Email  : Yourquizapp@123.com</label>
+            <br>
+            <label for="">Mobile : 9090909090</label>
+            <br>
+            <label for="">Address : Nashik 789077</label>
+        </div>
+        
+    </div>
+    <script>
+        function capital(){
+            document.getElementById('i1').style.textTransform="uppercase";
+        }
+    </script>
+</body>
+</html>
